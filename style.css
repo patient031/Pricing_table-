@@ -1,0 +1,137 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+/* Header Styling */
+header {
+    background: #0077b5;
+    color: white;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+/* Pricing Table */
+.pricing-table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.plan {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.plan:hover {
+    transform: scale(1.05);
+}
+
+.featured {
+    background: #0077b5;
+    color: white;
+    transform: scale(1.1);
+}
+
+.plan h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.featured .price {
+    color: white;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.plan ul li {
+    margin: 10px 0;
+    font-size: 0.9rem;
+}
+
+button {
+    background: #0077b5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #005582;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .featured {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .plan {
+        width: 100%;
+        padding: 15px;
+    }
+}
